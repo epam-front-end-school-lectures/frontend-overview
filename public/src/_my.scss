@@ -3,7 +3,7 @@
 }
 
 // Bootstrap
-.show-grid [class^=col-] {
+.row {
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #eee;
@@ -51,4 +51,23 @@ ins.code {
     background-color: rgba(86, 61, 124, 0.15);
     border: 1px solid #ddd;
     border: 1px solid rgba(86, 61, 124, 0.2);
+}
+
+.reveal .terminal {
+    padding: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(0,0,0,0.04);
+    border-radius: 3px;
+
+    &::before, &::after {
+        letter-spacing: -0.2em;
+        content: "\00a0";
+    }
+}
+
+.reveal li {
+    font-size: 52px;
 }

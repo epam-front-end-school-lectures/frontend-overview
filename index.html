@@ -16,12 +16,42 @@
             <h1>Front End world overview</h1>
         </section>
         <section>
+            <h2>Web Evolution</h2>
+        </section>
+        <section data-background="public/src/images/bgs/web-1-0.jpg">
+
+        </section>
+        <section>
+            <h3>WEB 1.0</h3>
+            <img src="public/src/images/bgs/priunil.jpg">
+        </section>
+        <section>
+            <img src="public/src/images/bgs/browsers.jpg">
+        </section>
+        <section data-background="public/src/images/bgs/web-2-0.jpg">
+
+        </section>
+        <section>
+            <h3>WEB 2.0</h3>
+            <img src="public/src/images/bgs/not-bad.jpeg">
+        </section>
+        <section>
             <h2>What Is a Framework?</h2>
+            <ul>
+                <li class="fragment fade-in">Architecture</li>
+                <li class="fragment fade-in">Functionality</li>
+                <li class="fragment fade-in">Design patterns</li>
+            </ul>
             <!--<p>"Framework" is a broad term, often misunderstood. Conceptually, a framework in the web development sense can be likened to a library: a library of design patterns, complete with all needed functionality.</p>-->
             <!--<p>Functionality usually means presentation (styling via CSS) and sometimes also behavior (scripting via JavaScript). The advantage of using a library is that we don’t have to code this functionality ourselves, or do so repeatedly. We instead follow the library’s instructions for the structural side (markup via HTML).</p>-->
         </section>
         <section>
             <h2>Why Frameworks?</h2>
+            <ul>
+                <li class="fragment fade-in">It works</li>
+                <li class="fragment fade-in">Saved design and development time</li>
+                <li class="fragment fade-in">Prevent errors</li>
+            </ul>
             <!--<p>Frameworks promise to save both development and design time. The thinking goes that many of the things site owners and developers want have been done a thousand times, and thus there is no need to reinvent the wheel.</p>-->
         </section>
         <section>
@@ -63,24 +93,52 @@
         <section>
             <h3>Which one to choose?</h3>
             <ul>
-                <li>Project needs/Functionality</li>
-                <li>Community</li>
-                <li>Authority/Publisher</li>
+                <li class="fragment fade-in">Project needs</li>
+                <li class="fragment fade-in">Functionality</li>
+                <li class="fragment fade-in">Community</li>
+                <li class="fragment fade-in">Github stars</li>
+                <li class="fragment fade-in">Authority</li>
+                <li class="fragment fade-in">Publisher</li>
             </ul>
         </section>
+        <section data-background="public/src/images/bgs/bootstrap.jpg">
+
+        </section>
         <section>
-            <img src="public/src/images/css-frameworks/3.png">
+            <h3>Installation</h3>
+
+            <br><br><br>
+
+            <h4>with bower</h4>
+            <code class="rich-diff-level-one terminal">
+                $ bower install bootstrap
+            </code>
+
+            <br><br><br>
+
+            <h4>with npm</h4>
+            <code class="rich-diff-level-one terminal">
+                $ npm install bootstrap
+            </code>
+
+            <br><br><br>
+
+            <h4><a href="http://getbootstrap.com/getting-started/">Download page</a></h4>
+        </section>
+        <section data-background="public/src/images/bgs/bootstrap-builder.jpg">
+
         </section>
         <section>
             <h3>Features</h3>
             <ul>
-                <li>Flexibility</li>
-                <li>Preprocessor compatibility</li>
-                <li>Powerful grid system</li>
-                <li>Rich UI elements (buttons, inputs, etc)</li>
-                <li>Rich components (widgets)</li>
-                <li>Modularity</li>
-                <li>Theming</li>
+                <li class="fragment fade-in">Powered by Twitter</li>
+                <li class="fragment fade-in">Flexibility</li>
+                <li class="fragment fade-in">Preprocessor compatibility</li>
+                <li class="fragment fade-in">Powerful grid system</li>
+                <li class="fragment fade-in">Rich UI elements (buttons, inputs, etc)</li>
+                <li class="fragment fade-in">Rich components (widgets)</li>
+                <li class="fragment fade-in">Modularity</li>
+                <li class="fragment fade-in">Theming</li>
             </ul>
         </section>
         <section>
@@ -120,43 +178,90 @@
         <section>
             <h3>Component example</h3>
             <ul class="nav nav-tabs" role="tablist">
-                <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Tab 1</a></li>
-                <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Tab 2</a></li>
+                <li role="presentation" class="active">
+                    <a href="#home" aria-controls="home" role="tab" data-toggle="tab">Tab 1</a>
+                </li>
+                <li role="presentation">
+                    <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Tab 2</a>
+                </li>
             </ul>
 
             <div class="tab-content">
-                <div role="tabpanel" class="tab-pane active" id="home"><p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p></div>
-                <div role="tabpanel" class="tab-pane" id="profile"><p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p></div>
+                <div role="tabpanel" class="tab-pane active" id="home">
+                    <p>Vivamus hendrerit arcu sed erat molestie vehicula.</p>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="profile">
+                    <p>Suspendisse dictum feugiat nisl ut dapibus.</p>
+                </div>
             </div>
         </section>
         <section>
             <h3>Code</h3>
             <div class="markdown-body">
                 <ins class="code"><pre class="rich-diff-level-zero">&lt;<span class="pl-ent rich-diff-level-one">ul</span> <span class="pl-e rich-diff-level-one">class</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>nav nav-tabs<span class="pl-pds">"</span></span> <span class="pl-e rich-diff-level-one">role</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>tablist<span class="pl-pds">"</span></span>&gt;
-    &lt;<span class="pl-ent rich-diff-level-one">li</span> <span class="pl-e rich-diff-level-one">role</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>presentation<span class="pl-pds">"</span></span> <span class="pl-e rich-diff-level-one">class</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>active<span class="pl-pds">"</span></span>&gt;&lt;<span class="pl-ent rich-diff-level-one">a</span> <span class="pl-e rich-diff-level-one">href</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>#home<span class="pl-pds">"</span></span> <span class="pl-e rich-diff-level-one">aria-controls</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>home<span class="pl-pds">"</span></span> <span class="pl-e rich-diff-level-one">role</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>tab<span class="pl-pds">"</span></span> <span class="pl-e rich-diff-level-one">data-toggle</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>tab<span class="pl-pds">"</span></span>&gt;Tab 1&lt;/<span class="pl-ent rich-diff-level-one">a</span>&gt;&lt;/<span class="pl-ent rich-diff-level-one">li</span>&gt;
-    &lt;<span class="pl-ent rich-diff-level-one">li</span> <span class="pl-e rich-diff-level-one">role</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>presentation<span class="pl-pds">"</span></span>&gt;&lt;<span class="pl-ent rich-diff-level-one">a</span> <span class="pl-e rich-diff-level-one">href</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>#profile<span class="pl-pds">"</span></span> <span class="pl-e rich-diff-level-one">aria-controls</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>profile<span class="pl-pds">"</span></span> <span class="pl-e rich-diff-level-one">role</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>tab<span class="pl-pds">"</span></span> <span class="pl-e rich-diff-level-one">data-toggle</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>tab<span class="pl-pds">"</span></span>&gt;Tab 2&lt;/<span class="pl-ent rich-diff-level-one">a</span>&gt;&lt;/<span class="pl-ent rich-diff-level-one">li</span>&gt;
+    &lt;<span class="pl-ent rich-diff-level-one">li</span> <span class="pl-e rich-diff-level-one">role</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>presentation<span class="pl-pds">"</span></span> <span class="pl-e rich-diff-level-one">class</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>active<span class="pl-pds">"</span></span>&gt;
+        &lt;<span class="pl-ent rich-diff-level-one">a</span> <span class="pl-e rich-diff-level-one">href</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>#home<span class="pl-pds">"</span></span> <span class="pl-e rich-diff-level-one">aria-controls</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>home<span class="pl-pds">"</span></span> <span class="pl-e rich-diff-level-one">role</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>tab<span class="pl-pds">"</span></span> <span class="pl-e rich-diff-level-one">data-toggle</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>tab<span class="pl-pds">"</span></span>&gt;Tab 1&lt;/<span class="pl-ent rich-diff-level-one">a</span>&gt;
+    &lt;/<span class="pl-ent rich-diff-level-one">li</span>&gt;
+    &lt;<span class="pl-ent rich-diff-level-one">li</span> <span class="pl-e rich-diff-level-one">role</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>presentation<span class="pl-pds">"</span></span>&gt;
+        &lt;<span class="pl-ent rich-diff-level-one">a</span> <span class="pl-e rich-diff-level-one">href</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>#profile<span class="pl-pds">"</span></span> <span class="pl-e rich-diff-level-one">aria-controls</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>profile<span class="pl-pds">"</span></span> <span class="pl-e rich-diff-level-one">role</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>tab<span class="pl-pds">"</span></span> <span class="pl-e rich-diff-level-one">data-toggle</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>tab<span class="pl-pds">"</span></span>&gt;Tab 2&lt;/<span class="pl-ent rich-diff-level-one">a</span>&gt;
+    &lt;/<span class="pl-ent rich-diff-level-one">li</span>&gt;
 &lt;/<span class="pl-ent rich-diff-level-one">ul</span>&gt;
 
 &lt;<span class="pl-ent rich-diff-level-one">div</span> <span class="pl-e rich-diff-level-one">class</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>tab-content<span class="pl-pds">"</span></span>&gt;
-    &lt;<span class="pl-ent rich-diff-level-one">div</span> <span class="pl-e rich-diff-level-one">role</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>tabpanel<span class="pl-pds">"</span></span> <span class="pl-e rich-diff-level-one">class</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>tab-pane active<span class="pl-pds">"</span></span> <span class="pl-e rich-diff-level-one">id</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>home<span class="pl-pds">"</span></span>&gt;&lt;<span class="pl-ent rich-diff-level-one">p</span>&gt;Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.&lt;/<span class="pl-ent rich-diff-level-one">p</span>&gt;&lt;/<span class="pl-ent rich-diff-level-one">div</span>&gt;
-    &lt;<span class="pl-ent rich-diff-level-one">div</span> <span class="pl-e rich-diff-level-one">role</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>tabpanel<span class="pl-pds">"</span></span> <span class="pl-e rich-diff-level-one">class</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>tab-pane<span class="pl-pds">"</span></span> <span class="pl-e rich-diff-level-one">id</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>profile<span class="pl-pds">"</span></span>&gt;&lt;<span class="pl-ent rich-diff-level-one">p</span>&gt;Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.&lt;/<span class="pl-ent rich-diff-level-one">p</span>&gt;&lt;/<span class="pl-ent rich-diff-level-one">div</span>&gt;
+    &lt;<span class="pl-ent rich-diff-level-one">div</span> <span class="pl-e rich-diff-level-one">role</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>tabpanel<span class="pl-pds">"</span></span> <span class="pl-e rich-diff-level-one">class</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>tab-pane active<span class="pl-pds">"</span></span> <span class="pl-e rich-diff-level-one">id</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>home<span class="pl-pds">"</span></span>&gt;
+        &lt;<span class="pl-ent rich-diff-level-one">p</span>&gt;Vivamus hendrerit arcu sed erat molestie vehicula.&lt;/<span class="pl-ent rich-diff-level-one">p</span>&gt;
+    &lt;/<span class="pl-ent rich-diff-level-one">div</span>&gt;
+    &lt;<span class="pl-ent rich-diff-level-one">div</span> <span class="pl-e rich-diff-level-one">role</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>tabpanel<span class="pl-pds">"</span></span> <span class="pl-e rich-diff-level-one">class</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>tab-pane<span class="pl-pds">"</span></span> <span class="pl-e rich-diff-level-one">id</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>profile<span class="pl-pds">"</span></span>&gt;
+        &lt;<span class="pl-ent rich-diff-level-one">p</span>&gt;Suspendisse dictum feugiat nisl ut dapibus.&lt;/<span class="pl-ent rich-diff-level-one">p</span>&gt;
+    &lt;/<span class="pl-ent rich-diff-level-one">div</span>&gt;
 &lt;/<span class="pl-ent rich-diff-level-one">div</span>&gt;</pre></ins>
                 </div>
         </section>
+        <section data-background="public/src/images/bgs/foundation.jpg">
+
+        </section>
         <section>
-            <h2>Foundation</h2>
-            <img src="public/src/images/css-frameworks/foundation.jpg">
+            <h3>Installation</h3>
+
+            <br><br><br>
+
+            <h4>First install CLI</h4>
+            <code class="rich-diff-level-one terminal">
+                $ npm install -g foundation-cli
+            </code>
+
+            <br><br><br>
+
+            <h4>with bower</h4>
+            <code class="rich-diff-level-one terminal">
+                $ bower install foundation-sites
+            </code>
+
+            <br><br><br>
+
+            <h4>with npm</h4>
+            <code class="rich-diff-level-one terminal">
+                $ npm install foundation-sites
+            </code>
+
+            <br><br><br>
+
+            <h4><a href="http://foundation.zurb.com/sites/download.html/">Download page</a></h4>
+        </section>
+        <section data-background="public/src/images/bgs/foundation-builder.jpg">
+
         </section>
         <section>
             <h3>Features</h3>
             <ul>
-                <li>Flexibility</li>
-                <li>Preprocessor compatibility</li>
-                <li>Powerful grid system</li>
-                <li>Rich UI elements (buttons, inputs, etc)</li>
-                <li>Rich components (widgets)</li>
-                <li>Modularity</li>
-                <li>Theming</li>
+                <li class="fragment fade-in">Powered by ZURB</li>
+                <li class="fragment fade-in">Flexibility</li>
+                <li class="fragment fade-in">Preprocessor compatibility</li>
+                <li class="fragment fade-in">Powerful grid system</li>
+                <li class="fragment fade-in">Rich UI elements (buttons, inputs, etc)</li>
+                <li class="fragment fade-in">Rich components (widgets)</li>
+                <li class="fragment fade-in">Modularity</li>
+                <li class="fragment fade-in">Theming</li>
             </ul>
         </section>
         <section class="foundation">
@@ -196,15 +301,19 @@
         <section>
             <h3>Component example</h3>
             <ul class="nav nav-tabs" data-tabs id="example-tabs">
-                <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
-                <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
+                <li class="tabs-title is-active">
+                    <a href="#panel1" aria-selected="true">Tab 1</a>
+                </li>
+                <li class="tabs-title">
+                    <a href="#panel2">Tab 2</a>
+                </li>
             </ul>
             <div class="tab-content" data-tabs-content="example-tabs">
                 <div class="tabs-panel is-active" id="panel1">
-                    <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+                    <p>Vivamus hendrerit arcu sed erat molestie vehicula.</p>
                 </div>
                 <div class="tabs-panel" id="panel2">
-                    <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+                    <p>Suspendisse dictum feugiat nisl ut dapibus.</p>
                 </div>
             </div>
         </section>
@@ -212,15 +321,19 @@
             <h3>Code</h3>
             <div class="markdown-body">
                 <ins class="code"><pre class="rich-diff-level-zero">&lt;<span class="pl-ent rich-diff-level-one">ul</span> <span class="pl-e rich-diff-level-one">class</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>nav nav-tabs<span class="pl-pds">"</span></span> <span class="pl-e rich-diff-level-one">data-tabs</span> <span class="pl-e rich-diff-level-one">id</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>example-tabs<span class="pl-pds">"</span></span>&gt;
-    &lt;<span class="pl-ent rich-diff-level-one">li</span> <span class="pl-e rich-diff-level-one">class</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>tabs-title is-active<span class="pl-pds">"</span></span>&gt;&lt;<span class="pl-ent rich-diff-level-one">a</span> <span class="pl-e rich-diff-level-one">href</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>#panel1<span class="pl-pds">"</span></span> <span class="pl-e rich-diff-level-one">aria-selected</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>&gt;Tab 1&lt;/<span class="pl-ent rich-diff-level-one">a</span>&gt;&lt;/<span class="pl-ent rich-diff-level-one">li</span>&gt;
-    &lt;<span class="pl-ent rich-diff-level-one">li</span> <span class="pl-e rich-diff-level-one">class</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>tabs-title<span class="pl-pds">"</span></span>&gt;&lt;<span class="pl-ent rich-diff-level-one">a</span> <span class="pl-e rich-diff-level-one">href</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>#panel2<span class="pl-pds">"</span></span>&gt;Tab 2&lt;/<span class="pl-ent rich-diff-level-one">a</span>&gt;&lt;/<span class="pl-ent rich-diff-level-one">li</span>&gt;
+    &lt;<span class="pl-ent rich-diff-level-one">li</span> <span class="pl-e rich-diff-level-one">class</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>tabs-title is-active<span class="pl-pds">"</span></span>&gt;
+        &lt;<span class="pl-ent rich-diff-level-one">a</span> <span class="pl-e rich-diff-level-one">href</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>#panel1<span class="pl-pds">"</span></span> <span class="pl-e rich-diff-level-one">aria-selected</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>true<span class="pl-pds">"</span></span>&gt;Tab 1&lt;/<span class="pl-ent rich-diff-level-one">a</span>&gt;
+    &lt;/<span class="pl-ent rich-diff-level-one">li</span>&gt;
+    &lt;<span class="pl-ent rich-diff-level-one">li</span> <span class="pl-e rich-diff-level-one">class</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>tabs-title<span class="pl-pds">"</span></span>&gt;
+        &lt;<span class="pl-ent rich-diff-level-one">a</span> <span class="pl-e rich-diff-level-one">href</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>#panel2<span class="pl-pds">"</span></span>&gt;Tab 2&lt;/<span class="pl-ent rich-diff-level-one">a</span>&gt;
+    &lt;/<span class="pl-ent rich-diff-level-one">li</span>&gt;
 &lt;/<span class="pl-ent rich-diff-level-one">ul</span>&gt;
 &lt;<span class="pl-ent rich-diff-level-one">div</span> <span class="pl-e rich-diff-level-one">class</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>tab-content<span class="pl-pds">"</span></span> <span class="pl-e rich-diff-level-one">data-tabs-content</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>example-tabs<span class="pl-pds">"</span></span>&gt;
     &lt;<span class="pl-ent rich-diff-level-one">div</span> <span class="pl-e rich-diff-level-one">class</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>tabs-panel is-active<span class="pl-pds">"</span></span> <span class="pl-e rich-diff-level-one">id</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>panel1<span class="pl-pds">"</span></span>&gt;
-        &lt;<span class="pl-ent rich-diff-level-one">p</span>&gt;Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.&lt;/<span class="pl-ent rich-diff-level-one">p</span>&gt;
+        &lt;<span class="pl-ent rich-diff-level-one">p</span>&gt;Vivamus hendrerit arcu sed erat molestie vehicula.&lt;/<span class="pl-ent rich-diff-level-one">p</span>&gt;
     &lt;/<span class="pl-ent rich-diff-level-one">div</span>&gt;
     &lt;<span class="pl-ent rich-diff-level-one">div</span> <span class="pl-e rich-diff-level-one">class</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>tabs-panel<span class="pl-pds">"</span></span> <span class="pl-e rich-diff-level-one">id</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>panel2<span class="pl-pds">"</span></span>&gt;
-        &lt;<span class="pl-ent rich-diff-level-one">p</span>&gt;Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.&lt;/<span class="pl-ent rich-diff-level-one">p</span>&gt;
+        &lt;<span class="pl-ent rich-diff-level-one">p</span>&gt;Suspendisse dictum feugiat nisl ut dapibus.&lt;/<span class="pl-ent rich-diff-level-one">p</span>&gt;
     &lt;/<span class="pl-ent rich-diff-level-one">div</span>&gt;
 &lt;/<span class="pl-ent rich-diff-level-one">div</span>&gt;</pre></ins>
             </div>
@@ -229,12 +342,19 @@
             <h2>Skeleton</h2>
         </section>
         <section>
+            <h3>Installation</h3>
+
+            <br><br><br>
+
+            <h4><a href="http://getskeleton.com/">Download page</a></h4>
+        </section>
+        <section>
             <h3>Features</h3>
             <ul>
-                <li>Dead simple</li>
-                <li>Grid system with 960px max width</li>
-                <li>Some UI elements</li>
-                <li>Lightweight</li>
+                <li class="fragment fade-in">Dead simple</li>
+                <li class="fragment fade-in">Grid system with 960px max width</li>
+                <li class="fragment fade-in">Some UI elements</li>
+                <li class="fragment fade-in">Lightweight</li>
             </ul>
         </section>
         <section>
@@ -285,52 +405,254 @@
             <img src="public/src/images/js-frameworks/jquery.png">
         </section>
         <section>
+            <h3>Installation</h3>
+
+            <br><br><br>
+
+            <h4>with bower</h4>
+            <code class="rich-diff-level-one terminal">
+                $ bower install jQuery
+            </code>
+
+            <br><br><br>
+
+            <h4>with npm</h4>
+            <code class="rich-diff-level-one terminal">
+                $ npm install jQuery
+            </code>
+
+            <br><br><br>
+
+            <h4><a href="http://foundation.zurb.com/sites/download.html/">Download page</a></h4>
+        </section>
+        <section>
             <h3>Features</h3>
             <ul>
-                <li>Simple to use</li>
-                <li>Flexibility</li>
-                <li>Tons of modules (plugins)</li>
-                <li>Wide browser support</li>
+                <li class="fragment fade-in">Browser support</li>
+                <li class="fragment fade-in">DOM manipulations</li>
+                <li class="fragment fade-in">Traversing</li>
+                <li class="fragment fade-in">Simple to use</li>
+                <li class="fragment fade-in">Flexibility</li>
+                <li class="fragment fade-in">Tons of modules (plugins)</li>
             </ul>
+        </section>
+        <section>
+            <h3>Plain crossbrowser XHR</h3>
+            <div class="markdown-body">
+                <ins class="code"><pre class="rich-diff-level-zero"><span class="pl-k rich-diff-level-one">function</span> <span class="pl-en rich-diff-level-one">getXmlHttpRequest</span>() {
+    <span class="pl-k rich-diff-level-one">var</span> xhr;
+        <span class="pl-k rich-diff-level-one">if</span> (<span class="pl-smi rich-diff-level-one">window</span>.<span class="pl-smi rich-diff-level-one">XMLHttpRequest</span>) {
+            xhr <span class="pl-k rich-diff-level-one">=</span> <span class="pl-k rich-diff-level-one">new</span> <span class="pl-en rich-diff-level-one">XMLHttpRequest</span>();
+        } <span class="pl-k rich-diff-level-one">else</span> {
+            <span class="pl-k rich-diff-level-one">try</span> {
+                xhr <span class="pl-k rich-diff-level-one">=</span> <span class="pl-k rich-diff-level-one">new</span> <span class="pl-en rich-diff-level-one">ActiveXObject</span>(<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>Msxml2.XMLHTTP<span class="pl-pds">"</span></span>);
+            } <span class="pl-k rich-diff-level-one">catch</span> (e) {
+            <span class="pl-k rich-diff-level-one">try</span> {
+                xhr <span class="pl-k rich-diff-level-one">=</span> <span class="pl-k rich-diff-level-one">new</span> <span class="pl-en rich-diff-level-one">ActiveXObject</span>(<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>Microsoft.XMLHTTP<span class="pl-pds">"</span></span>);
+            } <span class="pl-k rich-diff-level-one">catch</span> (e) {
+                xhr <span class="pl-k rich-diff-level-one">=</span> <span class="pl-c1 rich-diff-level-one">false</span>;
+            }
+        }
+    }
+    <span class="pl-k rich-diff-level-one">return</span> xhr;
+}</pre></ins>
+                </div>
+        </section>
+        <section>
+            <h3>jQuery ajax</h3>
+            <br>
+            <div class="markdown-body">
+                <ins class="code"><pre class="rich-diff-level-zero"><span class="pl-smi rich-diff-level-one">$</span>.<span class="pl-en rich-diff-level-one">ajax</span>()</pre></ins>
+            </div>
+        </section>
+        <section>
+            <h3>Useful links</h3>
+            <ul>
+                <li><a href="http://learn.jquery.com/">jQuery Learning Center</a></li>
+                <li><a href="http://api.jquery.com/">jQuery API</a></li>
+            </ul>
+        </section>
+        <section>
+            <div class="markdown-body">
+                <ins class="code"><pre class="rich-diff-level-zero"><span class="pl-en rich-diff-level-one">jQuery</span>(<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>#menu_items li.lvl1<span class="pl-pds">"</span></span>).<span class="pl-en rich-diff-level-one">mouseenter</span>(<span class="pl-k rich-diff-level-one">function</span>() {
+        <span class="pl-k rich-diff-level-one">var</span> gid <span class="pl-k rich-diff-level-one">=</span> <span class="pl-en rich-diff-level-one">jQuery</span>(<span class="pl-v rich-diff-level-one">this</span>).<span class="pl-en rich-diff-level-one">attr</span>(<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>id<span class="pl-pds">"</span></span>).<span class="pl-c1 rich-diff-level-one">replace</span>(<span class="pl-s rich-diff-level-one"><span class="pl-pds">'</span>mm_<span class="pl-pds">'</span></span>, <span class="pl-s rich-diff-level-one"><span class="pl-pds">'</span><span class="pl-pds">'</span></span>);
+        <span class="pl-k rich-diff-level-one">if</span>(<span class="pl-en rich-diff-level-one">jQuery</span>(<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>#sm<span class="pl-pds">"</span></span><span class="pl-k rich-diff-level-one">+</span>gid<span class="pl-k rich-diff-level-one">+</span><span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>_lvl2<span class="pl-pds">"</span></span>).<span class="pl-en rich-diff-level-one">is</span>(<span class="pl-s rich-diff-level-one"><span class="pl-pds">'</span>:empty<span class="pl-pds">'</span></span>))
+        {
+            <span class="pl-smi rich-diff-level-one">jQuery</span>.<span class="pl-en rich-diff-level-one">post</span>(<span class="pl-s rich-diff-level-one"><span class="pl-pds">'</span>/?a=catalog~AjaxGroupChilds<span class="pl-pds">'</span></span>, {<span class="pl-s rich-diff-level-one"><span class="pl-pds">'</span>group_id<span class="pl-pds">'</span></span> <span class="pl-k rich-diff-level-one">:</span> gid}, <span class="pl-k rich-diff-level-one">function</span>(<span class="pl-smi rich-diff-level-one">data</span>){
+                <span class="pl-en rich-diff-level-one">jQuery</span>(<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>#sm<span class="pl-pds">"</span></span><span class="pl-k rich-diff-level-one">+</span>gid<span class="pl-k rich-diff-level-one">+</span><span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>_lvl2<span class="pl-pds">"</span></span>).<span class="pl-en rich-diff-level-one">html</span>(data);
+            });
+        }
+        <span class="pl-en rich-diff-level-one">jQuery</span>(<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>#sm<span class="pl-pds">"</span></span><span class="pl-k rich-diff-level-one">+</span>gid<span class="pl-k rich-diff-level-one">+</span><span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>_lvl2<span class="pl-pds">"</span></span>).<span class="pl-c1 rich-diff-level-one">parent</span>().<span class="pl-en rich-diff-level-one">show</span>();
+    }).<span class="pl-en rich-diff-level-one">mouseleave</span>(<span class="pl-k rich-diff-level-one">function</span>() {
+        <span class="pl-k rich-diff-level-one">var</span> gid <span class="pl-k rich-diff-level-one">=</span> <span class="pl-en rich-diff-level-one">jQuery</span>(<span class="pl-v rich-diff-level-one">this</span>).<span class="pl-en rich-diff-level-one">attr</span>(<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>id<span class="pl-pds">"</span></span>).<span class="pl-c1 rich-diff-level-one">replace</span>(<span class="pl-s rich-diff-level-one"><span class="pl-pds">'</span>mm_<span class="pl-pds">'</span></span>, <span class="pl-s rich-diff-level-one"><span class="pl-pds">'</span><span class="pl-pds">'</span></span>);
+        <span class="pl-en rich-diff-level-one">jQuery</span>(<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>#sm<span class="pl-pds">"</span></span><span class="pl-k rich-diff-level-one">+</span>gid<span class="pl-k rich-diff-level-one">+</span><span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>_lvl2<span class="pl-pds">"</span></span>).<span class="pl-c1 rich-diff-level-one">parent</span>().<span class="pl-en rich-diff-level-one">hide</span>();
+    });
+
+    <span class="pl-k rich-diff-level-one">if</span> (<span class="pl-smi rich-diff-level-one">navigator</span>.<span class="pl-c1 rich-diff-level-one">userAgent</span>.<span class="pl-c1 rich-diff-level-one">search</span>(<span class="pl-s rich-diff-level-one"><span class="pl-pds">'</span>OPR<span class="pl-pds">'</span></span>) <span class="pl-k rich-diff-level-one">&gt;=</span> <span class="pl-c1 rich-diff-level-one">0</span>) {
+        <span class="pl-en rich-diff-level-one">jQuery</span>(<span class="pl-s rich-diff-level-one"><span class="pl-pds">'</span>.tl_eo<span class="pl-pds">'</span></span>).<span class="pl-c1 rich-diff-level-one">parent</span>().<span class="pl-en rich-diff-level-one">removeClass</span>(<span class="pl-s rich-diff-level-one"><span class="pl-pds">'</span>dnone<span class="pl-pds">'</span></span>);
+    } <span class="pl-k rich-diff-level-one">else</span> <span class="pl-k rich-diff-level-one">if</span> (<span class="pl-smi rich-diff-level-one">navigator</span>.<span class="pl-c1 rich-diff-level-one">userAgent</span>.<span class="pl-c1 rich-diff-level-one">search</span>(<span class="pl-s rich-diff-level-one"><span class="pl-pds">'</span>Chrome<span class="pl-pds">'</span></span>) <span class="pl-k rich-diff-level-one">&gt;=</span> <span class="pl-c1 rich-diff-level-one">0</span>) {
+        <span class="pl-en rich-diff-level-one">jQuery</span>(<span class="pl-s rich-diff-level-one"><span class="pl-pds">'</span>.tl_eg<span class="pl-pds">'</span></span>).<span class="pl-c1 rich-diff-level-one">parent</span>().<span class="pl-en rich-diff-level-one">removeClass</span>(<span class="pl-s rich-diff-level-one"><span class="pl-pds">'</span>dnone<span class="pl-pds">'</span></span>);
+        <span class="pl-en rich-diff-level-one">jQuery</span>(<span class="pl-s rich-diff-level-one"><span class="pl-pds">'</span>head<span class="pl-pds">'</span></span>).<span class="pl-en rich-diff-level-one">append</span>(<span class="pl-s rich-diff-level-one"><span class="pl-pds">'</span>&lt;link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/ahdfllkggodkgljbkdigcdngfiecgmfe" /&gt;<span class="pl-pds">'</span></span>);
+    }</pre></ins>
+            </div>
+        </section>
+        <section>
+            <img src="public/src/images/bgs/nothing.jpg">
+        </section>
+        <section>
+            <h3>MV* Frameworks</h3>
+        </section>
+        <section>
+            <img src="public/src/images/bgs/mvc.png">
         </section>
         <section>
             <img src="public/src/images/js-frameworks/backbone.png">
         </section>
         <section>
+            <h3>Installation</h3>
+
+            <br><br><br>
+
+            <h4>with bower</h4>
+            <code class="rich-diff-level-one terminal">
+                $ bower install backbone
+            </code>
+
+            <br><br><br>
+
+            <h4>with npm</h4>
+            <code class="rich-diff-level-one terminal">
+                $ npm install backbone
+            </code>
+
+            <br><br><br>
+
+            <h4><a href="http://backbonejs.org/">Download page</a></h4>
+        </section>
+        <section>
             <h3>Features</h3>
             <ul>
-                <li>Flexibility</li>
-                <li>Easy to learn/Simple to use</li>
-                <li>Lightweight</li>
-                <li>Any template-engine</li>
-                <li>Underscore/jQuery/Zepto</li>
+                <li class="fragment fade-in">Flexibility</li>
+                <li class="fragment fade-in">Easy to learn/Simple to use</li>
+                <li class="fragment fade-in">Lightweight</li>
+                <li class="fragment fade-in">Any template-engine</li>
+                <li class="fragment fade-in">Underscore/jQuery/Zepto</li>
             </ul>
+        </section>
+        <section>
+            <h3>Model creation</h3>
+            <div class="markdown-body">
+                <ins class="code"><pre class="rich-diff-level-zero"><span class="pl-k rich-diff-level-one">var</span> Book <span class="pl-k rich-diff-level-one">=</span> <span class="pl-smi rich-diff-level-one">Backbone</span>.<span class="pl-smi rich-diff-level-one">Model</span>.<span class="pl-en rich-diff-level-one">extend</span>({
+    defaults<span class="pl-k rich-diff-level-one">:</span> {
+        title<span class="pl-k rich-diff-level-one">:</span> <span class="pl-s rich-diff-level-one"><span class="pl-pds">'</span><span class="pl-pds">'</span></span>,
+        author<span class="pl-k rich-diff-level-one">:</span> <span class="pl-s rich-diff-level-one"><span class="pl-pds">'</span><span class="pl-pds">'</span></span>
+    }
+});
+
+<span class="pl-k rich-diff-level-one">var</span> book <span class="pl-k rich-diff-level-one">=</span> <span class="pl-k rich-diff-level-one">new</span> <span class="pl-en rich-diff-level-one">Book</span>({
+  title<span class="pl-k rich-diff-level-one">:</span> <span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>One Thousand and One Nights<span class="pl-pds">"</span></span>,
+  author<span class="pl-k rich-diff-level-one">:</span> <span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>Scheherazade<span class="pl-pds">"</span></span>
+});</pre></ins>
+            </div>
         </section>
         <section>
             <img src="public/src/images/js-frameworks/angular.png">
         </section>
         <section>
+            <h3>Installation</h3>
+
+            <br><br><br>
+
+            <h4>with bower</h4>
+            <code class="rich-diff-level-one terminal">
+                $ bower install angular
+            </code>
+
+            <br><br><br>
+
+            <h4>with npm</h4>
+            <code class="rich-diff-level-one terminal">
+                $ npm install angular
+            </code>
+
+            <br><br><br>
+
+            <h4><a href="https://angularjs.org/">Download page</a></h4>
+        </section>
+        <section>
             <h3>Features</h3>
             <ul>
-                <li>Declarative</li>
-                <li>Extends HTML</li>
-                <li>Data-binding</li>
-                <li>Dependency Injection</li>
-                <li>Filters</li>
+                <li class="fragment fade-in">Declarative</li>
+                <li class="fragment fade-in">Extends HTML</li>
+                <li class="fragment fade-in">Data-binding</li>
+                <li class="fragment fade-in">Dependency Injection</li>
+                <li class="fragment fade-in">Filters</li>
             </ul>
+        </section>
+        <section>
+            <img src="public/src/images/bgs/data-binding.png">
+        </section>
+        <section>
+            <h3>Scope and Directive</h3>
+            <div class="markdown-body">
+                <ins class="code"><pre class="rich-diff-level-zero">&lt;<span class="pl-ent rich-diff-level-one">div</span> <span class="pl-e rich-diff-level-one">ng-controller</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>PeopleCntl<span class="pl-pds">"</span></span>&gt;
+    &lt;<span class="pl-ent rich-diff-level-one">ul</span>&gt;
+        &lt;<span class="pl-ent rich-diff-level-one">li</span> <span class="pl-e rich-diff-level-one">ng-repeat</span>=<span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>person in people<span class="pl-pds">"</span></span>&gt;
+          &lt;<span class="pl-ent rich-diff-level-one">span</span>&gt;{{person.firstName}}&lt;/<span class="pl-ent rich-diff-level-one">span</span>&gt;
+          &lt;<span class="pl-ent rich-diff-level-one">p</span>&gt;{{person.lastName}}&lt;/<span class="pl-ent rich-diff-level-one">p</span>&gt;
+        &lt;/<span class="pl-ent rich-diff-level-one">li</span>&gt;
+    &lt;/<span class="pl-ent rich-diff-level-one">ul</span>&gt;
+&lt;/<span class="pl-ent rich-diff-level-one">div</span>&gt;</pre></ins>
+            </div>
         </section>
         <section>
             <img src="public/src/images/js-frameworks/react.png">
         </section>
         <section>
+            <h3>Installation</h3>
+
+            <br><br><br>
+
+            <h4><a href="https://facebook.github.io/react/docs/getting-started.html">Installation instruction</a></h4>
+        </section>
+        <section>
             <h3>Features</h3>
             <ul>
-                <li>Declarative</li>
-                <li>JSX</li>
-                <li>Virtual DOM</li>
-                <li>More Lib than Framework</li>
-                <li>Flux</li>
+                <li class="fragment fade-in">Declarative</li>
+                <li class="fragment fade-in">JSX</li>
+                <li class="fragment fade-in">Virtual DOM</li>
+                <li class="fragment fade-in">More Lib than Framework</li>
+                <li class="fragment fade-in">Flux</li>
             </ul>
+        </section>
+        <section>
+            <h3>Simple Component</h3>
+            <div class="markdown-body">
+                <ins class="code"><pre class="rich-diff-level-zero"><span class="pl-k rich-diff-level-one">var</span> People <span class="pl-k rich-diff-level-one">=</span> <span class="pl-smi rich-diff-level-one">React</span>.<span class="pl-en rich-diff-level-one">createClass</span>({
+    <span class="pl-en rich-diff-level-one">getInitialState</span><span class="pl-k rich-diff-level-one">:</span> <span class="pl-k rich-diff-level-one">function</span>() {
+        <span class="pl-k rich-diff-level-one">return</span> {
+            people<span class="pl-k rich-diff-level-one">:</span> [
+                <span class="pl-c rich-diff-level-one">// ...</span>
+            ]
+        }
+    },
+    <span class="pl-en rich-diff-level-one">render</span><span class="pl-k rich-diff-level-one">:</span> <span class="pl-k rich-diff-level-one">function</span>() {
+        <span class="pl-k rich-diff-level-one">return</span> <span class="pl-k rich-diff-level-one">&lt;</span>ul className<span class="pl-k rich-diff-level-one">=</span><span class="pl-s rich-diff-level-one"><span class="pl-pds">"</span>people<span class="pl-pds">"</span></span><span class="pl-k rich-diff-level-one">&gt;</span>
+            {<span class="pl-v rich-diff-level-one">this</span>.<span class="pl-smi rich-diff-level-one">state</span>.<span class="pl-smi rich-diff-level-one">people</span>.<span class="pl-en rich-diff-level-one">map</span>(<span class="pl-k rich-diff-level-one">function</span>(<span class="pl-smi rich-diff-level-one">person</span>) {
+                <span class="pl-k rich-diff-level-one">return</span> <span class="pl-k rich-diff-level-one">&lt;</span>li className<span class="pl-k rich-diff-level-one">=</span><span class="pl-s rich-diff-level-one"><span class="pl-pds">'</span>people__item<span class="pl-pds">'</span></span> key<span class="pl-k rich-diff-level-one">=</span>{<span class="pl-smi rich-diff-level-one">person</span>.<span class="pl-smi rich-diff-level-one">_id</span>}<span class="pl-k rich-diff-level-one">&gt;</span>
+                    <span class="pl-k rich-diff-level-one">&lt;</span>h3<span class="pl-k rich-diff-level-one">&gt;</span>{<span class="pl-smi rich-diff-level-one">person</span>.<span class="pl-smi rich-diff-level-one">firstName</span>}<span class="pl-k rich-diff-level-one">&lt;</span><span class="pl-k rich-diff-level-one">/</span>h3<span class="pl-k rich-diff-level-one">&gt;</span>
+                    <span class="pl-k rich-diff-level-one">&lt;</span>h4<span class="pl-k rich-diff-level-one">&gt;</span>{<span class="pl-smi rich-diff-level-one">person</span>.<span class="pl-smi rich-diff-level-one">lastName</span>}<span class="pl-k rich-diff-level-one">&lt;</span><span class="pl-k rich-diff-level-one">/</span>h4<span class="pl-k rich-diff-level-one">&gt;</span>
+                <span class="pl-k rich-diff-level-one">&lt;</span><span class="pl-k rich-diff-level-one">/</span>li<span class="pl-k rich-diff-level-one">&gt;</span>;
+            })}
+        <span class="pl-k rich-diff-level-one">&lt;</span><span class="pl-k rich-diff-level-one">/</span>ul<span class="pl-k rich-diff-level-one">&gt;</span>;
+    }
+});
+
+<span class="pl-smi rich-diff-level-one">ReactDOM</span>.<span class="pl-en rich-diff-level-one">render</span>(
+    <span class="pl-k rich-diff-level-one">&lt;</span>People<span class="pl-k rich-diff-level-one">/</span><span class="pl-k rich-diff-level-one">&gt;</span>,
+    <span class="pl-smi rich-diff-level-one">document</span>.<span class="pl-c1 rich-diff-level-one">getElementById</span>(<span class="pl-s rich-diff-level-one"><span class="pl-pds">'</span>content<span class="pl-pds">'</span></span>)
+);</pre></ins>
+            </div>
         </section>
         <section>
             <h3>Useful links</h3>
@@ -338,6 +660,9 @@
                 <li><a href="https://www.airpair.com/js/javascript-framework-comparison">JavaScript Frameworks comparison</a></li>
                 <li><a href="http://todomvc.com/">TotoMVC implementations on different Frameworks</a></li>
             </ul>
+        </section>
+        <section>
+            <img src="public/src/images/bgs/homer-computer-woohoo.jpg">
         </section>
     </div>
 </div>
