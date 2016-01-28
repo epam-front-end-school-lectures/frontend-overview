@@ -1,0 +1,54 @@
+.css__img {
+    width: 8%;
+}
+
+// Bootstrap
+.show-grid [class^=col-] {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #eee;
+    background-color: rgba(86, 61, 124, .15);
+    border: 1px solid #ddd;
+    border: 1px solid rgba(86, 61, 124, .2);
+}
+
+.reveal .row {
+    margin-bottom: 15px;
+}
+
+ins.code {
+    text-decoration: none;
+}
+
+.markdown-body pre {
+    font-size: 26px;
+}
+
+.btn-default {
+    font-size: 26px;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.reveal .nav-tabs a {
+    border: 1px solid transparent;
+}
+
+.reveal .nav-tabs {
+    border-bottom: 1px solid #ddd;
+
+    li {
+        margin-bottom: -1px;
+    }
+}
+
+.reveal .columns-t, .reveal .column, .reveal .columns {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #eee;
+    background-color: rgba(86, 61, 124, 0.15);
+    border: 1px solid #ddd;
+    border: 1px solid rgba(86, 61, 124, 0.2);
+}
